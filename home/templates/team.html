@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'team.css' %} ">
+    <link rel="icon" type="image/x-icon" href="{%static 'icon.webp'%}">
+    <style>
+      body{
+        background: linear-gradient(to right,yellow,rgb(124, 179, 124));
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="animate__animated animate__bounce animate__delay-2s">
+      <h1>This is Our Team Dashboard</h1>
+    </div>
+
+    <hr>
+
+    <table>
+      <tr>
+        <th>S No.</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Role</th>
+      </tr>
+      {%for people in Employee_details%}
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{people.Name}}</td>
+        <td>{{people.Email}}</td>
+        <td>{{people.Age}}</td>
+        <td>{{people.Role}}</td>
+      </tr>
+      {%endfor%}
+
+    </table>
+  </body>
+</html>

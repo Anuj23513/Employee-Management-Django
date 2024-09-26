@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'style.css' %} ">
+    <link rel="icon" type="image/x-icon" href="{%static 'icon.webp'%}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Tech World</title>
+    <style>
+      body,html {
+        margin: 0;
+        font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+        justify-content:center;
+        background: url("{%static 'back.jpg'%}");
+        background-size:cover;
+        width: 100%;
+        height: 100%;
+
+        
+        
+    
+      }
+      .content{
+        font-size: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-variant: small-caps;
+        font-variant-position: super;
+        text-shadow: 2px 3px black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <div id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/about" >About</a></li>
+        <li><a href="/team" target="_blank">Team</a></li>
+        <li><a href="/index" target="_blank">Dashboard</a></li>
+        <li><a href="/contact" target="_blank">Contact</a></li>
+        <li><a href="/register">Register</a></li>
+      </ul>
+    </div>
+    <marquee behavior="alternate" direction="down">
+      
+    <div class="animate__animated animate__bounce animate__delay-2s">
+      <h3 style="color:#d8e6b5 ;"
+        class="content">Welcome to the Tech World<br>
+        The World of Technology &
+        Innovation</h3>
+    </div>
+  </marquee>
+  </div>
+
+  </body>
+</html>
