@@ -136,8 +136,8 @@ STATICFILES_DIRS = [
 
 LOGIN_URL = 'login'
 CSRF_TRUSTED_ORIGINS = ['https://employee-management-django.onrender.com']
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 
