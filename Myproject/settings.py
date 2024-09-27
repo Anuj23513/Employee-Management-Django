@@ -135,3 +135,5 @@ STATICFILES_DIRS = [
 ]
 
 LOGIN_URL = 'login'
+CSRF_TRUSTED_ORIGINS = ['https://employee-management-django.onrender.com']
+
