@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right bottom , rgb(4, 48, 75) 11.2%, rgb(0, 1, 67) 91.1%);
+    object-fit: cover;
+    background-size: contain;
+    backdrop-filter: blur(50px);
+}
+
+.f1{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+}
+
+.f1 h1{
+    width: max-content;
+    text-align: center;
+    color: chartreuse;
+    margin-top: 10px;
+    margin-left: 43vw;
+    font-size: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px yellow;
+}
+
+#vision h5{
+    color: #0707f3;
+    font-size: 25px;
+    margin-top: 5%;
+    text-align: center;
+    text-shadow: none;
+}
+
+#vision h3{
+    color:white;
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+
+#mission h5{
+    
+    color: #0707f3;
+    font-size: 25px;
+    margin-top: 13%;
+    text-align: center;
+    text-shadow: none;
+}
+
+#mission h3{
+    color:white;
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+
+
+#why h5{
+    color: #0707f3;
+    font-size: 18px;
+    margin-top: 0;
+    text-align: center;
+    text-shadow: none;
+}
+
+#why h3{
+    color:white;
+    text-align: center;
+    margin: 15px;
+    font-size: 35px;
+
+}
+
+#why a{
+    color: white ;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius:10px;
+    margin-top: 20px;
+    margin-left: 45vw;
+}
+
+#why a:hover{
+    /* text-decoration:underline; */
+     color: #e4a5a5 ;
+    border-radius: 50px;
+    border-color: #dbc2c2 ;
+    transition: all 0.3s ease 0s;
+
+}
+
+
+#values h3{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#values p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+
+}
+
+
+#join h5{
+    color: #0707f3;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: none;
+    margin-top: 0;
+
+}
+
+#join h3{
+    color:rgb(221, 201, 201);
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+#join a{
+    color: hwb(0 91% 6%) ;
+    padding: 15px;
+    text-decoration: none;
+    border: 2px solid rgb(194, 178, 178);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 47vw;
+}
+
+#join a:hover{
+     color: #fff2f2 ;
+    border-radius: 50px;
+    border-color: #e9e0e0 ;
+    transition: all 0.3s ease 0s;
+    background: transparent;
+    font-weight: bold;
+}
+
