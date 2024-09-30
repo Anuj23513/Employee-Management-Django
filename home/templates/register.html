@@ -7,6 +7,12 @@
     {%load static%}
     <link rel="stylesheet" href="{% static 'register.css' %} ">
     <link rel="icon" type="image/x-icon" href="{%static 'icon.webp'%}">
+    <style>
+      .alr:hover{
+        transition: 0.2 ease-in-out; 
+        text-decoration: underline;
+      }
+    </style>
 
     <title>Register</title>
   </head>
@@ -40,8 +46,9 @@
         </div>
       </form>
       <div class="input-box button" style="text-align:center;">
+        <h5>Already have account </h5>
         <a style="text-decoration: none; border: 1px solid rgb(50, 86, 244)lue;
-        background:linear-gradient(to left,rgb(11, 173, 238),rgb(11, 228, 203)); color: white;border-radius: 3px; height: 10px;" href="/home">Home</a>
+        background:linear-gradient(to left,rgb(11, 173, 238),rgb(11, 228, 203)); color: white;border-radius: 3px; height: 10px;" href="/">Login</a>
       </div>
     </div>
 
