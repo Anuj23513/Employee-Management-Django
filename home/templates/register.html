@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="{% static 'register.css' %} ">
     <link rel="icon" type="image/x-icon" href="{%static 'icon.webp'%}">
     <style>
-      .alr:hover{
-        transition: 0.2 ease-in-out; 
-        text-decoration: underline;
+      .wrapper{
+        max-height: max-content;
+      }
+      body{
+        background: linear-gradient(to right bottom , rgb(4, 48, 75) 11.2%, rgb(0, 1, 67) 91.1%);
+        object-fit: cover;
+        background-size: contain;
+        backdrop-filter: blur(50px);
       }
     </style>
 
     <title>Register</title>
   </head>
-  <body style="background:linear-gradient(to bottom ,green,rgb(136, 211, 241));">
+  <body>
     <div class="wrapper">
       <h2>Register</h2><br>
       {% if messages %}
@@ -27,18 +32,26 @@
       <form action="#" method="POST">
         {% csrf_token %}
 
+        <!-- <div class="input-box"></div>
+          <input type="text" placeholder="Enter Employee name" required
+            name="Name">
+        </div> -->
         <div class="input-box">
-          <input type="text" placeholder="Create a username" required
+          <input type="text" placeholder="Create Employee username" required
             name="username">
         </div>
         <div class="input-box">
-          <input type="email" placeholder="Enter your email" required
+          <input type="email" placeholder="Enter Employee email" required
             name="email">
         </div>
         <div class="input-box">
-          <input type="password" placeholder="Enter your password" required
+          <input type="password" placeholder="Set Employee password" required
             name="password">
         </div>
+        <!-- <div class="input-box"></div>
+          <input type="number" placeholder="Enter Employee Phone" required
+            name="Phone">
+        </div> -->
         <div class="policy">
         </div>
         <div class="input-box button">

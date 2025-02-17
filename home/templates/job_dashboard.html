@@ -13,6 +13,14 @@
       crossorigin="anonymous">
       {%load static%}
       <link rel="icon" type="image/x-icon" href="{%static 'icon.webp'%}">
+      <style>
+        body{
+            background: linear-gradient(to right bottom , rgb(4, 48, 75) 11.2%, rgb(0, 1, 67) 91.1%);
+            object-fit: cover;
+            background-size: contain;
+            backdrop-filter: blur(50px);
+        }
+      </style>
       
 
     <title>Job Dashboard</title>
@@ -72,7 +80,7 @@
         <div class="col-md-8">
           <h2 class="text-center text-white bg-dark p-1.5">Employee Details</h2>
           <table class="table">
-            <thead>
+            <thead style="color: antiquewhite;">
               <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
@@ -84,7 +92,7 @@
                 <th scope="col">Delete</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody style="color: aliceblue;">
               {% for i in data%}
               <tr>
                 <th scope="row">{{i.id}}</th>
@@ -105,7 +113,7 @@
           </table>
           <marquee behavior="scroll" direction="left">
             <div>
-              <h5 style="color:cadetblue">Your Department and role will assign after your successful verification,Thank You.</h5>
+              <h5 style="color:rgb(205, 214, 214)">Your Department and role will assign after your successful verification,Thank You.</h5>
             </div>
           </marquee>
 

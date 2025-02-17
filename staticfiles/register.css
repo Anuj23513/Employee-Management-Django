@@ -14,7 +14,7 @@ background: #f1f3f9;
 }
 .wrapper{
 position: relative;
-max-width: 430px;
+max-width:max-content;
 width: 100%;
 background: #fff;
 padding: 34px;

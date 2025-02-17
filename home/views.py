@@ -20,6 +20,21 @@ def loginpage(request):
              return redirect('login')
         
     return render(request,'login.html')
+
+def admin_login(request):
+
+    if request.method=="POST":
+        username=request.POST.get('uname')
+        password=request.POST.get('pass')
+        validate_user=authenticate(username=username,password=password)
+        if validate_user is not None:
+            login(request,validate_user)
+            return redirect('home')
+        else:
+             messages.error(request,'Wrong Credentials')
+             return redirect('login')
+        
+    return render(request,'admin_login.html')
 @login_required(login_url="/")
 def home(request):
     return render(request,'index.html')
@@ -40,13 +55,16 @@ def team(request):
 def about(request):
     return render(request,'about.html')
 
-# @login_required(login_url='/')
+# @login_required(login_url='/admin_login')
 def register(request):
     if request.method=="POST":
        
         username=request.POST.get('username')
         email=request.POST.get('email')
         password=request.POST.get('password')
+        Name=request.POST.get('Name')
+        Phone=request.POST.get('Phone')
+
         
         
         
